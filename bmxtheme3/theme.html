@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}> 
+
+<script language="JavaScript">
+<!--
+
+function SymError()
+{
+  return true;
+}
+
+window.onerror = SymError;
+
+var SymRealWinOpen = window.open;
+
+function SymWinOpen(url, name, attributes)
+{
+  return (new Object());
+}
+
+window.open = SymWinOpen;
+
+//-->
+</script>
+
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+function popJump(selOBJ){
+    location.href= selOBJ.options[selOBJ.selectedIndex].value;
+}
+</script>
+<script type=text/javascript>
+<!--
+preImg1= new Image();
+preImg1.src = "<{$xoops_imageurl}>images/menutitle.jpg";
+preImg2= new Image();
+preImg2.src = "<{$xoops_imageurl}>images/menutitle2.jpg";
+preImg3= new Image();
+preImg3.src = "<{$xoops_imageurl}>images/tri.gif";
+preImg4= new Image();
+preImg4.src = "<{$xoops_imageurl}>images/tri2.gif";
+// -->
+</script>
+</head>
+
+<body> <div style="width: 720;">
+<!-- ヘッダの定義 -->
+<table width="800" border="0" cellpadding="0" cellspacing="0" id="barmain">
+ <tr>
+  <td id="headerbanner">
+  <a href="<{$xoops_url}>/index.php"><img src="<{$xoops_imageurl}>/images/logo.gif" align="left" /></a> 
+  </td>
+  <td id="menubar" style="width:10%;"><div class="menu">
+  <a href="<{$xoops_url}>/index.php">Home</a></div></td>
+  <td id="menubar" style="width:10%;"><div class="menu">
+  <a href="<{$xoops_url}>/modules/news/">News</a></div></td>
+  <td id="menubar" style="width:10%;"><div class="menu">
+  <a href="<{$xoops_url}>/modules/newbb/">Forum</a></div></td>
+  <td id="menubar" style="width:10%;"><div class="menu">
+  <a href="<{$xoops_url}>/modules/mydownloads/">Downloads</a></div></td>
+  <td id="menubar" style="width:10%;"><div class="menu">
+  <a href="<{$xoops_url}>/modules/pukiwiki/">Documents</a></div></td>
+  <td id="menubar" style="width:10%;"><div class="menu">
+  <a href="<{$xoops_url}>/modules/contact/">Contact</a></div></td>
+<!--
+
+  <td id="menubar"><div class="menu">
+  <a href="<{$xoops_url}>/">ホーム</a></div></td>
+  <td id="menubar"><div class="menu">
+  <a href="<{$xoops_url}>/modules/news/">ニュース</a></div></td>
+  <td id="menubar"><div class="menu">
+  <a href="<{$xoops_url}>/modules/newbb/">フォーラム</a></div></td>
+  <td id="menubar"><div class="menu">
+  <a href="<{$xoops_url}>/modules/mydownloads/">ダウンロード</a></div></td>
+  <td id="menubar"><div class="menu">
+  <a href="<{$xoops_url}>/modules/pukiwiki/">ドキュメント</a></div></td>
+  <td id="menubar"><div class="menu">
+  <a href="<{$xoops_url}>/modules/contact/">お問い合わせ</a></div></td>
+-->
+   </tr> 
+   <tr>
+	<td id="headerbanner">
+	<a href="<{$xoops_url}>/default.htm"><img src="<{$xoops_imageurl}>/images/logo2.gif" align="left" /></a>
+	</td>
+        <td align="right" id="headerbarunder">
+          <select style="font-size:8pt" onChange="popJump(this)">
+          <option value="#" selected="selected">Language</option>
+          <option value="../../default.htm">English</option>
+          <option value="../../../~xoops/default.htm">Japanese</option>
+        </td>
+     <td id="headerbarunder" colspan=5 valign="top"> <{if $xoops_isuser}><a href="<{$xoops_url}>/user.php"> 
+      <{$xoops_uname}></a>&nbsp;Now Login&nbsp;|&nbsp;
+	  <a href="<{$xoops_url}>/user.php@op=logout">Logout</a> 
+      <{else}> <a href="<{$xoops_url}>/user.php">Login</a>&nbsp;|&nbsp;
+	  <a href="<{$xoops_url}>/register.php">New Entry</a> 
+      <{/if}> 
+	 </td>
+<!--
+	 <td id="headerbarunder" colspan=5 valign="top" align="right"> <{if $xoops_isuser}><a href="<{$xoops_url}>/user.php"> 
+      <{$xoops_uname}></a>&nbsp;さん&nbsp;現在ログイン中です&nbsp;|&nbsp;
+	  <a href="<{$xoops_url}>/user.php?op=logout">ログアウト</a> 
+      <{else}> <a href="<{$xoops_url}>/user.php">ログイン</a>&nbsp;|&nbsp;
+	  <a href="<{$xoops_url}>/register.php">新規登録</a> 
+      <{/if}> 
+	 </td>
+-->
+  <td id="obSHR_h" ><img src="<{$xoops_imageurl}>/images/1px.gif" width="17" height="1" alt="" /></td>
+   </tr>
+</table>
+<!-- ヘッダ終わり -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" id="main">
+ <tr>
+ <td>
+ <table width="100%" border="0" cellpadding="0" cellspacing="0" id="table_edge">
+  <tr> 
+    <td id="table_topleft"></td>
+    <td id="table_topright"></td>
+  </tr>
+ </table>
+ <table border="0" cellpadding="0" cellspacing="0" >
+  <tr> 
+    <td id="leftcolumn"> 
+      <!-- 左ブロックの定義 -->
+      <{foreach item=block from=$xoops_lblocks}>
+	  <table border="0" cellpadding="0" cellspacing="0">
+      <tr>
+	  <td colspan="3">
+      <div class="blockTitle">
+<!--
+		<{$block.title|replace:"Main":"<img src='$xoops_imageurl/images/kfm_home.gif' /> Main"|replace:"User":"<img src='$xoops_imageurl/images/tux.gif' /> User"|replace:"Login":"<img src='$xoops_imageurl/images/tux.gif' /> Login"|replace:"Who":"<img src='$xoops_imageurl/images/kuser.gif' /> Who"|replace:"Search":"<img src='$xoops_imageurl/images/kfind.gif' /> Search"|replace:"Recent Download":"<img src='$xoops_imageurl/images/Download Drive.gif' /> Recent Download"}>
+-->
+		<{$block.title|replace:"kfm_home.gif":"<img src='$xoops_imageurl/images/kfm_home.gif' />"|replace:"tux.gif":"<img src='$xoops_imageurl/images/tux.gif' />"|replace:"kuser.gif":"<img src='$xoops_imageurl/images/kuser.gif' />"|replace:"kfind.gif":"<img src='$xoops_imageurl/images/kfind.gif' />"|replace:"Download Drive.gif":"<img src='$xoops_imageurl/images/Download Drive.gif' />"|replace:"toggle_log.gif":"<img src='$xoops_imageurl/images/toggle_log.gif' />"}>
+      </div>
+      <div class="blockContent"><{$block.content}></div>
+      </td>
+      </tr>
+      </table>
+      <div class="space"></div>
+      <{/foreach}>
+      <!-- 左ブロック終わり -->
+      <br />
+	  <img src="<{$xoops_imageurl}>images/spacer.gif" width="172" height="1" alt="" /> 
+    </td>
+    <td id="centercolumn"> 
+      <!-- Display center blocks if any -->
+      <{if $xoops_showcblock == 1}>
+	  <table cellspacing="0">
+        <tr> 
+          <td id="centerCcolumn" colspan="2"> 
+            <!-- 中央-中央ブロックの定義 -->
+            <{foreach item=block from=$xoops_ccblocks}>
+			<table align="center" cellpadding="0" cellspacing="2">
+              <tr> 
+                <td><div class="blockTitle"><{$block.title}></div>
+                  <div class="blockContent"><{$block.content}></div>
+				  </td>
+              </tr>
+            </table>
+            <{/foreach}> 
+            <!-- 中央-中央ブロック終わり -->
+          </td>
+        </tr>
+        <tr> 
+          <td id="centerLcolumn"> 
+            <!-- 中央-左ブロックの定義 -->
+            <{foreach item=block from=$xoops_clblocks}>
+			<table align="center" cellpadding="3" cellspacing="2">
+              <tr> 
+                <td> <div class="blockTitle"><{$block.title}></div>
+                  <div class="blockContent"><{$block.content}></div>
+				  </td>
+              </tr>
+            </table>
+            <{/foreach}> 
+            <!-- 中央-左ブロック終わり -->
+          </td>
+          <td id="centerRcolumn"> 
+            <!-- 中央-右ブロックの定義 -->
+            <{foreach item=block from=$xoops_crblocks}>
+			<table align="center" cellpadding="3" cellspacing="2">
+              <tr> 
+                <td> <div class="blockTitle"><{$block.title}></div>
+                  <div class="blockContent"><{$block.content}></div></td>
+              </tr>
+            </table>
+            <{/foreach}> 
+            <!-- 中央-右ブロック終わり -->
+          </td>
+        </tr>
+      </table>
+      <{/if}> 
+      <!-- End display center blocks -->
+      <div id="content"> <{$xoops_contents}> </div>
+      <br /> <br />
+	  </td>
+    <{if $xoops_showrblock == 1}> 
+    <td id="rightcolumn"> 
+      <!-- 右ブロックの定義 -->
+      <{foreach item=block from=$xoops_rblocks}> 
+	  <div class="blockTitle"><{$block.title}></div>
+      <div class="blockContent"><{$block.content}></div>
+      <img src="<{$xoops_imageurl}>images/spacer.gif" width="240" height="1" alt="" /> 
+      <{/foreach}> 
+      <!-- 右ブロック終わり -->
+      <{/if}> </td>
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" id="table_edge">
+      <tr> 
+        <td id="table_bottomleft"></td>
+        <td id="table_bottomright"></td>
+      </tr>
+    </table>
+	</td>
+  <td rowspan="6" id="obSHR" ><img src="<{$xoops_imageurl}>/images/1px.gif" width="17" height="1" alt="" /></td>
+  </tr>
+  </table>
+  </td>
+  </tr>
+</table>
+<!-- フッタの定義 -->
+<table border="0" cellpadding="0" cellspacing="0" >
+  <tr >
+    <td id="foot">
+    <div class="footer"><br />
+	<{$xoops_footer}> 
+    </div>
+    </td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
+
+<script language="JavaScript">
+<!--
+var SymRealOnLoad;
+var SymRealOnUnload;
+
+function SymOnUnload()
+{
+  window.open = SymWinOpen;
+  if(SymRealOnUnload != null)
+     SymRealOnUnload();
+}
+
+function SymOnLoad()
+{
+  if(SymRealOnLoad != null)
+     SymRealOnLoad();
+  window.open = SymRealWinOpen;
+  SymRealOnUnload = window.onunload;
+  window.onunload = SymOnUnload;
+}
+
+SymRealOnLoad = window.onload;
+window.onload = SymOnLoad;
+
+//-->
+</script>
+

@@ -1,0 +1,194 @@
+/* artNOMAD2 Style Sheet   */
+/* auther -  artNOMAD <info@art-nomad.net>  */
+/* web - http://art-nomad.net/   */
+/* this theme is licensed under a Creative Commons License 2.0 2004, artNOMAD   */
+/* CCL - http://creativecommons.org/licenses/by/2.0/  */
+
+/* 全般設定 */
+body { 
+	color: #000000; font-family: "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Osaka",verdana, arial, sans-serif;
+	background-color: #E7DFE7; margin: 8px;
+	background-image: url(images/background.gif); background-repeat: repeat; background-position: top left;
+}
+table { width: 100%; font-size: 12px;}
+table td { padding: 0px; border-width: 0px; vertical-align: top; font-family: "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Osaka",verdana, arial, sans-serif;}
+table#main { background-color: #ffffff; width: 911px; border-right:0px solid #777777;}
+table#table_edge { background-color: #ffffff; width: 100%;}
+
+/* メニューバー */
+table#barmain { width: 900px; background-color: transparent; }
+td#menubar { font-size: 11px; text-align:center; background: url(images/menutitle.gif); background-repeat: no-repeat; background-color: #707070;}
+td#menubar th { vertical-align: middle;}
+td#menubar div.menu a { 
+	width: 75px;
+	padding:7px; 
+	display: block; 
+	color: #ffffff; font-weight: bold; text-align:center; 
+	background: url(images/menutitle.jpg); background-repeat: no-repeat; border-right:0px solid #0;
+}
+td#menubar div.menu a:hover { color: #0033CC; background: url(images/menutitle2.gif); background-repeat: no-repeat;  vertical-align: middle; text-decoration: none;}
+td#menubar div.menu_search { text-align:right; padding-right:10px; vertical-align: middle;}
+
+/* 全般的なリンクの設定 */
+a { color: #1020a0; text-decoration: none; font-weight: bold; background-color: transparent;}
+a:hover { color: #ff6600; text-decoration: underline;}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+ul { margin: 2px; padding: 2px; text-align: left;}
+li { margin-left: 2px; list-style: disc inside; color: #404090;}
+
+input.formButton {}
+
+/* 最新ニュースの枠 */
+.item { border: 1px solid #F3F4F5;}
+/* 最新ニュースのタイトルバー */
+.itemHead { padding: 3px; background-color: transparent; color: #111111;}
+/* 最新ニュースの投稿情報欄 */
+.itemInfo { text-align: right; padding: 3px; background-color: #F3F4F5;}
+/* 最新ニュースのタイトルの設定 */
+.itemTitle a { font-size: 120%; font-weight: bold; background-color: transparent;}
+/* 最新ニュースの投稿者 */
+.itemPoster { font-size: 90%;}
+/* 最新ニュースの投稿日 */
+.itemPostDate { font-size: 90%;}
+/* 最新ニュースのステータス */
+.itemStats { font-size: 90%;}
+/* 最新ニュースのコンテンツ部分 */
+.itemBody { padding-left: 15px;}
+.itemText { margin-top: 5px; margin-bottom: 5px; line-height: 130%;}
+/* 最新ニュースの1文字目 Mac IE 対応*/
+/*
+\*/
+.itemText:first-letter { font-size: 150%; font-weight: bold;}
+/*
+*/
+/* 最新ニュースのフッター */
+.itemFoot { text-align: right; padding: 3px; background-color: #F3F4F5;}
+.itemAdminLink { font-size: 90%;}
+.itemPermaLink { font-size: 90%;}
+
+/* ヘッダーバナー */
+td#headerbanner { width: 710PX; background-color: transparent; vertical-align: middle; padding-bottom: 0px; text-align:center;}
+
+/* ヘッダーバー */
+td#headerbar { font-size:10px; background-color: transparent; color: #FFFFFF; padding-top: 2px; padding-bottom: 2px; padding-right: 2px; text-align:right;}
+td#headerbar a { color: #FFFFFF;}
+td#headerbar a:hover { color: #FFFFFF;  background-color:#839DBE;}
+td#headerbarunder { background: url(images/logo2side.gif); font-size:10px; background-color: #777777; color: #FFFFFF; padding-top: 3px; padding-bottom: 3px; padding-right: 6px; text-align:right;}
+
+td#obSHR_h {
+	background-image: url(images/shrh.gif);
+	width: 17px;
+}
+td#obSHR {
+	background-image: url(images/shr.gif);
+	width: 17px;
+}
+
+/* メインテーブル角 */
+td#table_topleft { background: url(images/leftedge.gif); background-repeat: no-repeat; background-position: left; height:6px; width:6px; }
+td#table_topright { height:6px; width:6px;}
+td#table_bottomleft { background: url(images/leftedge.gif); background-repeat: no-repeat; background-position: left; height:6px; width:6px;}
+td#table_bottomright {  height:6px; width:6px;}
+
+/* メニューテーブル角 */
+td#menu_topleft { background: url(images/title_topleft.gif); background-repeat: no-repeat; background-position: left; height:4px; width:4px; background-color:#F3F4F5;} 
+td#menu_topmiddle { background: url(images/title_topmiddle.gif); background-repeat: repeat; background-position: top; height:4px; background-color:#F3F4F5;}
+td#menu_topright { background: url(images/title_topright.gif); background-repeat: no-repeat; background-position: right; height:4px; width:4px; background-color:#F3F4F5;}
+td#menu_bottomleft { background: url(images/title_bottomleft.gif); background-repeat: no-repeat; background-position: left; height:4px; width:4px; align:left;}
+td#menu_bottommiddle { background: url(images/title_bottommiddle.gif); background-repeat: repeat; background-position: top; height:4px;}
+td#menu_bottomright { background: url(images/title_bottomright.gif); background-repeat: no-repeat; background-position: right; height:4px; width:4px;}
+
+/* メインメニュー */
+td#mainmenu a { color: #eeeeff; font-size: 11px; display: block;  background-image: url('images/1rightarrow_blue.gif'); background-repeat: no-repeat; background-position: left; padding-left: 10px; font-weight: bold;}
+td#mainmenu a:hover { color: #ff6633; background-image: url('images/1rightarrow.gif'); background-repeat: no-repeat; background-position: left;}
+td#mainmenu a.menuTop { padding-left: 20px;}
+td#mainmenu a.menuMain { padding-left: 20px;}
+td#mainmenu a.menuSub {  color: #58f158; padding-left: 20px; background-image:  url('images/1rightarrow_green.gif'); font-weight: normal;}
+
+/* ユーザーメニュー */
+td#usermenu a { color: #eeeeff; padding-left: 20px; background-image: url('images/1rightarrow_blue.gif'); background-repeat: no-repeat; background-position: left; font-weight: normal; font-size: 11px;}
+td#usermenu a:hover { color: #ff6633; background-image: url('images/1rightarrow.gif'); background-repeat: no-repeat; background-position: left;}
+td#usermenu a.highlight { background-color: #fcc;}
+
+/* 左コラム */
+td#leftcolumn { font-size: 11px; background-color: #777777; padding-left:4px; background-image: url('images/leftedge.gif');}
+td#leftcolumn th { color: #FFFFFF; vertical-align: bottom; background-color: transparent;}
+td#leftcolumn div.blockTitle { color: #ffffff; font-weight: bold; font-size: 10px; padding-left: 10px; border-bottom: 1px solid #999999; padding-top: 2px; padding-bottom: 6px;}
+td#leftcolumn div.blockContent { color: #000000; font-size:11px; padding: 6px; line-height: 120%; line-height: 120%; }
+td#leftcolumn div.space { height:4px;}
+
+/* 中央コラム */
+td#centercolumn { width: 100%; font-size: 12px; color: #111111; padding-left: 8px; padding-right: 8px;}
+td#centercolumn th { background: url(images/header_back.gif); color: #336699; background-color: #DFE2E6; padding: 4px;}
+td#centerCcolumn div.blockTitle { background: url(images/title_back.gif); font-size: 13px; padding: 4px; color: #ffffff; font-weight: bold; text-align:center; margin-top: 0px; margin-right: 0px; margin-left: 0px; margin-bottom: 0px; padding-left: 0px; background-color: #425963;
+	border-left: 1px solid #999999; border-right: 1px solid #999999; border-bottom: 1px solid #999999;}
+td#centerCcolumn div.blockContent { margin-right: 0px; margin-left: 0px; margin-bottom: 8px; line-height: 120%; background-color: #e2e9ef;
+	border-left: 1px solid #999999; border-right: 1px solid #999999; border-bottom: 1px solid #999999;}
+
+/* 中央左コラム */
+td#centerLcolumn { width: 50%; padding: 0px 0px 0px 0px;}
+td#centerLcolumn div.blockTitle { font-size: 11px; padding: 2px; color: #336699; font-weight: bold; margin-top: 0px; margin-right: 0px; margin-left: 0px; margin-bottom: 5px; padding-left: 10px; background-color: #F3F4F5;}
+td#centerLcolumn div.blockContent { padding: 3px; margin-right: 0px; margin-left: 0px; line-height: 120%;}
+
+/* 中央右コラム */
+td#centerRcolumn { width: 50%; padding: 0px;}
+td#centerRcolumn div.blockTitle { padding: 2px; color: #336699; font-weight: bold; margin-top: 0px; margin-right: 0px; margin-left: 0px; margin-bottom: 5px; padding-left: font-size: 12px; 10px; background-color: #F3F4F5;}
+td#centerRcolumn div.blockContent { padding: 3px; margin-right: 0px; margin-left: 0px; margin-bottom: 2px; line-height: 120%;}
+
+/* 右コラム */
+td#rightcolumn { font-size: 11px; background-color: #cedbde; border-right: 8px solid #ffffff;}
+td#rightcolumn th { vertical-align: bottom; border-bottom: background-color: transparent; color: #777777;}
+td#rightcolumn div.blockTitle { padding: 3px; color: #000000; font-weight: bold; margin-top: 0px; margin-right: 0px; margin-left: 0px; font-size: 12px; background-color: transparent; margin-bottom: 2px; padding-left: 10px;}
+td#rightcolumn div.blockContent { padding: 3px; color: #000000; line-height: 120%; border-bottom: 1px solid #999999;  padding-bottom:20px;}
+
+div#content {text-align: left; padding-top: 0px; padding-bottom: 8px; padding-right: 8px;}
+
+/* フォーラムなどの外枠*/
+.outer { background-color: #d0d0d0;}
+/* フォーラムなどの投稿情報欄 */
+.head { font-weight: bold; background-position: left; color: #7a8d9b; height: 24px; line-height: 22px; text-align: center; background-color: #aFb2c6;}
+/* フォーラムなどの交互に色が変わる部分 */
+.even { background-color: #cFd2e6; padding: 5px;}
+.odd { background-color: #DFE2E6; padding: 5px;}
+/* フォーラムなどのフッター */
+.foot { padding: 5px; font-weight: bold;}
+
+tr.even td { background-color: #e2e9ef; padding: 5px;}
+tr.odd td { background-color: #f2f9ef; padding: 5px;}
+
+/* フッター */
+.footer { width: 911px; height:32px; 
+	font-size: 10px; text-align: center; text-valign: middle;
+	background: url(images/footer.gif); background-color: transparent; 
+}
+.footer a { color: #0000F0;}
+
+/* Xoopsメッセージ */
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #777777; border-bottom: 1px solid #777777; padding: 10px;}
+
+/* Xoopsコード */
+div.xoopsCode { background: #FFFFFF; border: 1px inset #000080; font-family: Osaka, "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+
+/* 引用 */
+div.xoopsQuote { background: #FFFFFF; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+
+/* コメント */
+.comTitle { font-weight: bold; margin-bottom: 2px;}
+.comText { padding: 2px;}
+.comUserStat { font-size: 10px; color: #2F5376; font-weight:bold; border: 1px solid silver; background-color: #FFFFFF; margin: 2px; padding: 2px;}
+.comUserStatCaption { font-weight: normal;}
+.comUserStatus { margin-left: 2px; margin-top: 10px; color: #2F5376; font-weight:bold; font-size: 10px;}
+.comUserRank { margin: 2px;}
+.comUserRankText { font-size: 10px;font-weight:bold;}
+.comUserRankImg { border: 0px;}
+.comUserName {}
+.comUserImg { margin: 2px;}
+.comDate { font-weight: normal; font-style: italic; font-size: smaller;}
+.comDateCaption { font-weight: bold; font-style: normal;}
